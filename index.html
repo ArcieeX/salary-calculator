@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Income Tax Calculator</h1>
+        <h2>Find out how much your salary is after tax</h2>
+        <form action="#" id="form" class="tax-form">
+            <div class="form-group">
+                <label for="salary">Enter Gross Income</label>
+                <input type="number" name="salary" id="salary">
+            </div>
+            <div class="form-group">
+                <label for="period">Per:</label>
+                <select name="period" id="type">
+                    <option value="annual">Annual</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="state">Choose by State:</label>
+                <select name="state" id="state">
+                    <option value="california">California</option>
+                    <option value="new york">New York</option>
+                    <option value="colorado">Denver</option>
+                </select> 
+            </div>
+            <input type="submit" class="calculate-btn" value="calculate">
+            <img src="imgs/icon__main-header.png" alt="">
+        </form>
+    </div>
+        <div id="output" class="output">
+            <h3>Calculated Tax Summary:</h3>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
